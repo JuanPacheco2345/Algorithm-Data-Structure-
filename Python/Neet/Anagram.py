@@ -1,4 +1,7 @@
-def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+from collections import defaultdict
+
+
+def groupAnagrams(strs):
     res = defaultdict(list)
     for s in strs:
         #There are 26 lower case character
@@ -9,3 +12,7 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         res[tuple(count)].append(s)
 
     return res.values()
+
+
+
+groupAnagrams(["act","pots","tops","cat","stop","hat"])
