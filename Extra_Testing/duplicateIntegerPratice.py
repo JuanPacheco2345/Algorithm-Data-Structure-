@@ -39,4 +39,9 @@ def twoSum(nums,target):
 
 
 def anagramGroups(strs):
-    
+    res = dict()
+    for str in strs:
+        count = []
+        for s in str:
+            count.append(ord('a') - ord(s))
+        res
