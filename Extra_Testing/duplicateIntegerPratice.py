@@ -172,3 +172,10 @@ def decode(s):
         res.append(s[i : j])
         i = j
     return res
+
+
+
+def longestConsecutiveSequence(nums):
+    #Sovled
+
+
